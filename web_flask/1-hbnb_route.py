@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""this is an extension of 0-hello hbnb, 
+it prints hbnb on a new route"""
 from flask import Flask
 app = Flask(__name__)
 @app.route('/', strict_slashes=False)

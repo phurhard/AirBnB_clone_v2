@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""This script is the strt of flask, it 
+starts a flask app and prints hello hbnb to the interface of 
+the web browser"""
 from flask import Flask
 app = Flask(__name__)
 @app.route('/', strict_slashes=False)
