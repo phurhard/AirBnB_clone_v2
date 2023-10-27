@@ -23,7 +23,7 @@ def hbnb():
 def c_text(variable):
     """ This function returns the text added at the url"""
     text = escape(variable.replace('_', ' '))
-    return "C %s" % text
+    return f"C {text}"
 
 
 @app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
@@ -31,7 +31,7 @@ def c_text(variable):
 def python(text='is cool'):
     """ This fuction return python and other string"""
     user_text = escape(text.replace('_', ' '))
-    return "Python %s" % user_text
+    return f"Python {user_text}"
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ def hbnb():
 def c_text(variable):
     """ This function returns the text added at the url"""
     text = escape(variable.replace('_', ' '))
-    return "C %s" % text
+    return f"C {text}"
 
 
 if __name__ == "__main__":
